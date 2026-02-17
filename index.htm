@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="description" content="MiBa Inox - Michal Bartoš. Precizní zakázková kovovýroba a zámečnictví v regionu Přerovska. Výroba z nerezu a oceli, 3D vizualizace, brány, ploty a schodiště.">
+<meta name="keywords" content="kovovýroba, zámečnictví, nerez, ocel, Michal Bartoš, MiBa Inox, Přerov, Osek nad Bečvou, brány, ploty, zábradlí">
+<meta name="author" content="Michal Bartoš">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiBa Inox | Precizní kovovýroba Michal Bartoš</title>
+    <style>
+        :root { 
+            --dark: #2c3e50; 
+            --silver: #bdc3c7; 
+            --accent: #27ae60; 
+            --light: #f4f7f6; 
+        }
+        
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; color: var(--dark); line-height: 1.6; background: #fff; }
+        
+        header { background: var(--dark); color: white; padding: 3rem 1rem; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+        
+        nav { 
+            background: #1a252f; 
+            padding: 1rem; 
+            text-align: center; 
+            position: -webkit-sticky; /* Pro Safari */
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; transition: color 0.3s; }
+        nav a:hover { color: var(--accent); }
+
+        .hero { 
+            padding: 6rem 2rem; 
+            text-align: center; 
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1000'); 
+            background-size: cover; 
+            background-position: center;
+            color: white; 
+        }
+
+        .container { max-width: 1100px; margin: auto; padding: 4rem 1.5rem; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card { 
+            border: 1px solid #eee; 
+            padding: 2rem; 
+            border-radius: 10px; 
+            background: var(--light); 
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .card h3 { color: var(--dark); margin-top: 0; border-bottom: 3px solid var(--accent); display: inline-block; }
+
+        .about-section { background: #fdfdfd; border-top: 1px solid #eee; }
+        .about-list { list-style: none; padding: 0; }
+        .about-list li { margin-bottom: 1.2rem; padding-left: 35px; position: relative; }
+        .about-list li::before { content: '✓'; position: absolute; left: 0; color: var(--accent); font-weight: bold; font-size: 1.2rem; }
+
+        footer { background: var(--dark); color: white; text-align: center; padding: 4rem 1.5rem; }
+        footer a { color: var(--silver); text-decoration: none; transition: color 0.3s; }
+        footer a:hover { color: white; }
+        
+        .btn { 
+            background: var(--accent); 
+            color: white !important; 
+            padding: 12px 30px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            display: inline-block; 
+            margin-top: 1.5rem; 
+            font-weight: bold;
+            transition: transform 0.2s, background 0.3s;
+        }
+        .btn:hover { background: #219150; transform: scale(1.05); }
+
+        .contact-box { margin-top: 2rem; font-size: 1.1rem; }
+        .contact-box p { margin: 10px 0; }
+
+        @media (max-width: 600px) {
+            nav a { margin: 0 8px; font-size: 0.8rem; }
+            header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MiBa Inox</h1>
+    <p>Kovovýroba & Zámečnictví | Michal Bartoš</p>
+</header>
+
+<nav>
+    <a href="#sluzby">Služby</a>
+    <a href="#o-nas">O nás</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section class="hero">
+    <h2>Precizní detail, udržitelná řešení</h2>
+    <p>Zakázková výroba z nerezu a oceli s využitím 3D vizualizací.</p>
+    <a href="https://www.facebook.com/share/1Ebubd5aiM/" class="btn" target="_blank">Sledujte naši práci na Facebooku</a>
+</section>
+
+<div class="container" id="sluzby">
+    <h2 style="text-align:center; margin-bottom: 3rem;">Co pro vás vyrobíme</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Exteriéry</h3>
+            <p>Ploty, brány, branky, přístřešky a moderní pergoly na míru přesně podle vašich představ.</p>
+        </div>
+        <div class="card">
+            <h3>Interiéry</h3>
+            <p>Designová schodiště a nerezová zábradlí s důrazem na detail, která pozvednou váš interiér.</p>
+        </div>
+        <div class="card">
+            <h3>Průmysl a obce</h3>
+            <p>Lávky, městský mobiliář a konstrukční prvky vodohospodářských staveb s vysokou odolností.</p>
+        </div>
+    </div>
+</div>
+
+<section class="about-section" id="o-nas">
+    <div class="container">
+        <h2>Proč zvolit MiBa Inox?</h2>
+        <ul class="about-list">
+            <li><strong>Digitální přesnost:</strong> Návrhy a vizualizace v CAD/BIM pro nulovou chybovost při realizaci.</li>
+            <li><strong>Ekologický přístup:</strong> Využíváme recyklované materiály a optimalizujeme střihové plány pro minimum odpadu.</li>
+            <li><strong>Kvalita bez kompromisů:</strong> Svařování metodami TIG/MIG a špičkové povrchové úpravy (zinek, komaxit).</li>
+            <li><strong>Lokalita:</strong> Působíme v regionu Přerovska se zázemím v Oseku nad Bečvou.</li>
+        </ul>
+    </div>
+</section>
+
+<footer id="kontakt">
+    <div class="container" style="padding:0">
+        <h2>Kontaktujte nás</h2>
+        
+        <div class="contact-box" style="text-align: center; margin-top: 2rem;">
+            
+            <div style="margin-bottom: 2rem;">
+                <p><strong>Michal Bartoš</strong></p>
+                <p>Osek nad Bečvou 348, 751 22</p>
+                <p>Tel: <a href="tel:+420604692808" style="color: var(--accent); font-weight: bold; text-decoration: none;">+420 604 692 808</a></p>
+                <p>E-mail: <a href="mailto:mibainox@gmail.com" style="color: white; text-decoration: none;">mibainox@gmail.com</a></p>
+                
+                <div style="margin-top: 1.5rem;">
+                    <a href="kontakt.vcf" class="btn" style="background: var(--dark); border: 1px solid var(--accent); padding: 10px 20px;">
+                        📥 Uložit vizitku do telefonu
+                    </a>
+                </div>
+            </div>
+
+            <div style="display: inline-flex; flex-direction: column; align-items: center; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); margin-top: 1rem;">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3AMichal%20Barto%C5%A1%20-%20MiBa%20Inox%0AORG%3AMiBa%20Inox%0ATEL%3BTYPE%3DCELL%3A%2B420604692808%0AEMAIL%3BTYPE%3DWORK%3Amibainox%40gmail.com%0AADR%3BTYPE%3DWORK%3A%3B%3BOsek%20nad%20Be%C4%8Dvou%20348%3BOsek%20nad%20Be%C4%8Dvou%3B%3B75122%3B%C4%8Cesk%C3%A1%20republika%0AURL%3Ahttps%3A%2F%2Fwww.facebook.com%2Fshare%2F1Ebubd5aiM%2F%0AEND%3AVCARD" 
+                     alt="QR kontakt MiBa Inox" style="width: 150px; height: 150px; display: block; margin: 0 auto;">
+                <p style="color: #333; font-size: 0.8rem; font-weight: bold; margin-top: 12px; margin-bottom: 0; text-transform: uppercase; letter-spacing: 0.5px;">Naskenujte kontakt</p>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 4rem; font-size: 0.85rem; opacity: 0.7; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <p>© 2026 MiBa Inox - Všechna práva vyhrazena</p>
+        </div>
+    </div>
+</footer>
+
+</body>
